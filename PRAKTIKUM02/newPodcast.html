@@ -5,13 +5,26 @@
     <title>newPodcast.html</title>
 </head>
 <body>
-<form>
+
+<header>
+
+    <nav>
+        <img width="100" height="100"
+             src="assets/export-2022-12-06_220721.svg"
+             alt="Logo (100%)">
+        <a href="index.html">Abonnierte Podcast</a>
+        <a href="podcast.html">Details zum Podcast</a>
+        <a href="episode.html">Details zur Episode</a>
+        <a href="newPodcast.html">New Podcast</a>
+    </nav>
+</header>
+<form action="https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php" method="POST">
     <fieldset>
         <legend>Add new Podcast</legend>
 
         <p>
             <label for="titel">Titel</label>
-            <input name="pctitle" id="titel" maxlength="100" pattern="[A-Z][a-z]* [A-Z][a-z]*" required><br>
+            <input name="pctitle" id="titel" pattern="[A-Z][a-z]* [A-Z][a-z]*" maxlength="100"  required><br>
         </p>
 
 <p>
@@ -21,35 +34,41 @@
 
 <p>
     <label for="autor">Autor(en)</label>
-    <input name="pcauthors" id="autor">
+    <input name="pcauthors" id="autor" placeholder="Max Musterfrau" pattern="[A-Z][a-z]* [A-Z][a-z]*[^,]" >
 </p>
 
 <p>
     <label for="nameDesBesitzers">Name des
         Besitzers</label>
-    <input name="pcownername" id="nameDesBesitzers" required><br>
+    <input name="pcownername" placeholder="Max Musterfrau" id="nameDesBesitzers" pattern="[A-Z][a-z]* [A-Z][a-z]*" required><br>
 </p>
 
         <p>
             <label for="eMailDesBesitzers">E-Mail des
                 Besitzers</label>
-            <input name="pcowneremail" id="eMailDesBesitzers" required><br>
+            <input type="email" size="30" multiple placeholder="Max.Musterfrau@hotmail.de" name="pcowneremail" id="eMailDesBesitzers" required><br>
         </p>
 
         <p>
-            <label for="kategorie">Kategorie(n)</label>
-            <input name="pccategories" id="kategorie">
+
+            <label>Kategorie
+                <select name="pccategories">
+                    <option value="gesellschaftUndKultu">Gesellschaft und Kultu</option>
+                    <option value="wahreKriminalfälle">Wahre Kriminalfälle</option>
+                    <option value="comedy">Comedy</option>
+                </select>
+            </label>
         </p>
 
         <p>
             <label for="letztesUpdateDatum">Letztes Update
                 (Datum)</label>
-            <input name="pclastupdatedate" id="letztesUpdateDatum" required><br>
+            <input name="pclastupdatedate" type="date" placeholder="YYYY-MM-DD" min="2000-01-01" id="letztesUpdateDatum"  required><br> <!--pattern="[1-31][.][1-12][.](?:20)[0-9]{2}"!-->
         </p>
         <p>
             <label for="letztesUpdateUhrzeit">Letztes Update
                 (Uhrzeit)</label>
-            <input name="pclastupdatetime" id="letztesUpdateUhrzeit" required><br>
+            <input name="pclastupdatetime" type="time" placeholder="HH:MM" id="letztesUpdateUhrzeit" required><br>
         </p>
 
 
