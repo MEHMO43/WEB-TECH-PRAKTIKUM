@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>newPodcast.html</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Add new Podcast</legend>
+
+        <p>
+            <label for="titel">Titel</label>
+            <input name="pctitle" id="titel" maxlength="100" pattern="[A-Z][a-z]* [A-Z][a-z]*" required><br>
+        </p>
+
+<p>
+    <label for="beschreibung">Beschreibung</label>
+    <input name="pcdescription" id="beschreibung" maxlength="500" >
+</p>
+
+<p>
+    <label for="autor">Autor(en)</label>
+    <input name="pcauthors" id="autor">
+</p>
+
+<p>
+    <label for="nameDesBesitzers">Name des
+        Besitzers</label>
+    <input name="pcownername" id="nameDesBesitzers" required><br>
+</p>
+
+        <p>
+            <label for="eMailDesBesitzers">E-Mail des
+                Besitzers</label>
+            <input name="pcowneremail" id="eMailDesBesitzers" required><br>
+        </p>
+
+        <p>
+            <label for="kategorie">Kategorie(n)</label>
+            <input name="pccategories" id="kategorie">
+        </p>
+
+        <p>
+            <label for="letztesUpdateDatum">Letztes Update
+                (Datum)</label>
+            <input name="pclastupdatedate" id="letztesUpdateDatum" required><br>
+        </p>
+        <p>
+            <label for="letztesUpdateUhrzeit">Letztes Update
+                (Uhrzeit)</label>
+            <input name="pclastupdatetime" id="letztesUpdateUhrzeit" required><br>
+        </p>
+
+
+    </fieldset>
+    <fieldset>
+        <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>
