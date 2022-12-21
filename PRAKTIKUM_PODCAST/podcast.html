@@ -5,7 +5,7 @@
     <title>App-Podcast</title>
   </head>
 
-  <!--// TODO: podcast.html um ein Bild(z.B. Logo) erweitern-->
+  <!--// TODO: podcast.html um ein Bild(z.B. Logo) erweitern (check)-->
 
   <body>
     <header>
@@ -28,6 +28,15 @@
 
     <main>
       <h2>Informationen zum Podcast</h2>
+
+      <figure>
+        <img
+          src="assets/Legion_Hacking_A.png"
+          alt="Legion Anonymous Cover"
+          width="200"
+          height="200"
+        />
+      </figure>
 
       <a href="episode.html#legion">
         <h3 id="podcast01">Legion: Hacking Anonymous</h3>
@@ -63,42 +72,46 @@
         </li>
       </ul>
       <h3>Episoden zum Podcast</h3>
-
+      <!--unterteilung tabelle(check)-->
       <table>
-        <tr>
-          <th>Titel</th>
-          <th>Datum des Erscheinens</th>
-        </tr>
-        <tr>
-          <td>
-            <a href="episode.html#geschäftsmann">Der Geschäftsmann</a>
-          </td>
-          <td>12.02.2022</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Titel</th>
+            <th>Datum des Erscheinens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="episode.html#geschäftsmann">Der Geschäftsmann</a>
+            </td>
+            <td>12.02.2022</td>
+          </tr>
 
-        <tr>
-          <td>
-            <a href="episode.html#geschäftsmann">Stranger in Warschau</a>
-          </td>
+          <tr>
+            <td>
+              <a href="episode.html#geschäftsmann">Stranger in Warschau</a>
+            </td>
 
-          <td>22.02.2022</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="episode.html#geschäftsmann">Nachtzug nach Lwiw</a>
-          </td>
-          <td>15.03.2022</td>
-        </tr>
-        <tr>
-          <td><a href="episode.html#geschäftsmann">Roberts Rache</a></td>
-          <td>22.03.2022</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="episode.html#geschäftsmann">Guess Who's Back</a>
-          </td>
-          <td>29.04.2022</td>
-        </tr>
+            <td>22.02.2022</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="episode.html#geschäftsmann">Nachtzug nach Lwiw</a>
+            </td>
+            <td>15.03.2022</td>
+          </tr>
+          <tr>
+            <td><a href="episode.html#geschäftsmann">Roberts Rache</a></td>
+            <td>22.03.2022</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="episode.html#geschäftsmann">Guess Who's Back</a>
+            </td>
+            <td>29.04.2022</td>
+          </tr>
+        </tbody>
       </table>
       <br />
     </main>
