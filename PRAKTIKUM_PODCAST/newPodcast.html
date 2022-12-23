@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>newPodcast.html</title>
-    <link rel="stylesheet" type="text/css"
-          href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
   </head>
   <body>
     <header>
@@ -27,61 +27,24 @@
         method="POST"
       >
         <fieldset>
-          <legend> Add new Podcast</legend>
+          <legend>Add new Podcast</legend>
 
-          <p>
-            <label for="titel">Titel</label>
-            <input
-              name="pctitle"
-              id="titel"
-              pattern="[A-Z][a-z]*"
-              maxlength="100"
-              required
-            /><br />
-          </p>
+          <fieldset>
+            <legend>Podcast Informationen</legend>
 
-          <p>
-            <label for="beschreibung">Beschreibung</label>
-            <input name="pcdescription" id="beschreibung" maxlength="500" />
-          </p>
+            <p>
+              <label for="titel">Titel</label>
+              <input
+                name="pctitle"
+                id="titel"
+                pattern="[A-Z][a-z]*"
+                maxlength="100"
+                required
+              /><br />
+            </p>
 
-          <p>
-            <label for="autor">Autor(en)</label>
-            <input
-              name="pcauthors"
-              id="autor"
-              placeholder="Max Musterfrau"
-              pattern="[A-Z][a-z]* [A-Z][a-z]*[^,]"
-            />
-          </p>
-
-          <p>
-            <label for="nameDesBesitzers">Name des Besitzers</label>
-            <input
-              name="pcownername"
-              placeholder="Max Musterfrau"
-              id="nameDesBesitzers"
-              pattern="[A-Z][a-z]* [A-Z][a-z]*"
-              required
-            /><br />
-          </p>
-
-          <p>
-            <label for="eMailDesBesitzers">E-Mail des Besitzers</label>
-            <input
-              type="email"
-              size="30"
-              multiple
-              placeholder="Max.Musterfrau@hotmail.de"
-              name="pcowneremail"
-              id="eMailDesBesitzers"
-              required
-            /><br />
-          </p>
-
-          <p>
-            <label
-              >Kategorie
+            <p>
+              <label>Kategorie </label>
               <select name="pccategories">
                 <option value="gesellschaftUndKultu">
                   Gesellschaft und Kultu
@@ -89,36 +52,90 @@
                 <option value="wahreKriminalfälle">Wahre Kriminalfälle</option>
                 <option value="comedy">Comedy</option>
               </select>
-            </label>
-          </p>
+            </p>
 
-          <p>
-            <label for="letztesUpdateDatum">Letztes Update (Datum)</label>
-            <input
-              name="pclastupdatedate"
-              type="date"
-              min="2000-01-01"
-              id="letztesUpdateDatum"
-              required
-            />
+            <p>
+              <label for="beschreibung">Beschreibung</label>
+              <textarea
+                name="pcdescription"
+                id="beschreibung"
+                maxlength="500"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </p>
+          </fieldset>
 
-          </p>
+          <fieldset>
+            <legend>Verantwortliche Personen</legend>
 
-          <p>
-            <label for="letztesUpdateUhrzeit">Letztes Update (Uhrzeit)</label>
-            <input
-              name="pclastupdatetime"
-              type="time"
-              id="letztesUpdateUhrzeit"
-              required
-            />
-          </p>
+            <p>
+              <label for="autor">Autor(en)</label>
+              <input
+                name="pcauthors"
+                id="autor"
+                placeholder="Max Musterfrau"
+                pattern="[A-Z][a-z]* [A-Z][a-z]*[^,]"
+              />
+            </p>
+
+            <p>
+              <label for="nameDesBesitzers">Name des Besitzers</label>
+              <input
+                name="pcownername"
+                placeholder="Max Musterfrau"
+                id="nameDesBesitzers"
+                pattern="[A-Z][a-z]* [A-Z][a-z]*"
+                required
+              /><br />
+            </p>
+
+            <p>
+              <label for="eMailDesBesitzers">E-Mail des Besitzers</label>
+              <input
+                type="email"
+                size="30"
+                multiple
+                placeholder="Max.Musterfrau@hotmail.de"
+                name="pcowneremail"
+                id="eMailDesBesitzers"
+                required
+              /><br />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Letztes Update</legend>
+
+            <p>
+              <label for="letztesUpdateDatum">Letztes Update (Datum)</label>
+              <input
+                name="pclastupdatedate"
+                type="date"
+                min="2000-01-01"
+                id="letztesUpdateDatum"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="letztesUpdateUhrzeit">Letztes Update (Uhrzeit)</label>
+              <input
+                name="pclastupdatetime"
+                type="time"
+                id="letztesUpdateUhrzeit"
+                required
+              />
+            </p>
+          </fieldset>
         </fieldset>
+
         <fieldset>
-          <input type="submit" />
+          <input type="submit" class="submitButton" />
         </fieldset>
       </form>
     </main>
+
     <aside>
       <details>
         <summary>Bereich mit Zusatzinformationen</summary>
@@ -130,6 +147,7 @@
         </p>
       </details>
     </aside>
+
     <footer>
       <p>
         <small> &copy;by WebTech Inc.</small>

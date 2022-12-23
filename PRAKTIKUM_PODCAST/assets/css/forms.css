@@ -1,0 +1,54 @@
+label,
+legend {
+  font-weight: bold;
+}
+
+input:invalid {
+  border-color: lightcoral;
+}
+/* mit Ausnahme von select und Textarea überprüfen */
+input:active {
+  background-color: thistle;
+}
+/* hinter Eingabeelemente für erforderliche Eingaben ( required ) ein rotes Sternchen*/
+input:required::after {
+  content: "*";
+  color: red;
+}
+/* Stylen Sie die Schaltflächen zum Absenden von Formularen, mindestens durch (weitere
+Deklarationen sind erlaubt):
+1. Änderung der Hintergrundfarbe
+2. Setzen runder Ecken
+3. Hinzufügen eines Hover-Effektes*/
+
+.submitButton {
+  background-color: mediumpurple;
+  border-radius: 20px;
+}
+.submitButton:hover {
+  background-color: darkorchid;
+}
+
+/*Die Beschriftungen der logischen Gruppen besitzen nur links und rechts einen Rand sowie runde Ecken.*/
+legend {
+  border-color: lavender;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*Die logischen Gruppen besitzen nur oben einen Rand.*/
+
+fieldset {
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: lavender;
+}
+
+/*Die Eingabelemente (mit Ausnahme von select und textarea ) besitzen nur unten einen Rand.*/
+
+input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
