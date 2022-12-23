@@ -1,0 +1,30 @@
+h1 {
+    font-style:revert ;
+    color: mediumpurple;
+}
+h2 {
+    font-style: revert;
+    color: crimson;
+}
+h3{
+    font-style: revert;
+    color:cornflowerblue;
+}
+strong{
+    font-style: revert;
+    color: cornflowerblue;
+}
+
+nav, nav a{
+    background-color:lavender;
+    text-decoration:lavender;
+
+}
+
+aside{
+    background-color: lavender;
+
+}
+label, legend{
+    font-weight: bold;
+}
