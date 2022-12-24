@@ -15,13 +15,55 @@ strong {
   color: cornflowerblue;
 }
 
-nav,
-nav a {
+nav {
   background-color: lavender;
+  margin: 20px;
+  padding: 20px;
+}
+
+nav [href] {
   text-decoration: none;
+  border: 2px white solid;
+  background-color: mediumpurple;
+  border-radius: 5px;
+  padding: 5px;
+}
+nav [href]:hover {
+  background-color: darkorchid;
 }
 
 aside {
   background-color: lavender;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
 }
 
+/*jede ungerade Zeile im Tabellen-Body sowie der Tabellenkopf farblich hervorgehoben. Der Tabellenkopf soll dabei in einer
+anderen Farbe hervorgehoben sein als die Zeilen im Tabellen-Body*/
+
+#episodenTabelle tr:nth-of-type(odd) {
+  background-color: mediumpurple;
+}
+
+#episodenTabelle th {
+  background-color: lavender;
+}
+
+/*Legen Sie als Schriftart für die gesamte Seite "Helvetica" fest. Falls diese nicht
+verfügbar ist, soll "Arial" verwendet werden, sonst eine andere Schriftart ohne Serifen.*/
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Fügen Sie über eine CSS-Regel vor jedem E-Mail-Link (wie z.B. Detailseite zu einem
+Aufgabe 2: Styling weiterer Teile der Web-
+Anwendung
+Podcast, podcast.html ) ein kleines Bild eines Briefumschlages ein. Tipp: Skalieren
+Sie das Bild vorher mit einem Grafikprogramm auf die gewünschte Größe. Als
+Alternative zu einem Bild können Sie auch das Unicode-Zeichen "✉" verwenden*/
+
+[href*="mailto"]::before {
+  content: url(assets/img/mail.png);
+}
