@@ -1,23 +1,23 @@
 label,
 legend {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 input:invalid {
-  border-color: lightcoral;
+    border-color: lightcoral;
 }
 
 /* mit Ausnahme von select und Textarea überprüfen */
 
 input:active {
-  background-color: thistle;
+    background-color: thistle;
 }
 
 /* hinter Eingabeelemente für erforderliche Eingaben ( required ) ein rotes Sternchen*/
 
 input:required::after {
-  content: "*";
-  color: red;
+    content: "*";
+    color: red;
 }
 
 /* Stylen Sie die Schaltflächen zum Absenden von Formularen, mindestens durch (weitere
@@ -27,39 +27,40 @@ Deklarationen sind erlaubt):
 3. Hinzufügen eines Hover-Effektes*/
 
 .submitButton {
-  border: 2px white solid;
-  background-color: mediumpurple;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+    border: 2px white solid;
+    background-color: mediumpurple;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
+
 .submitButton:hover {
-  background-color: darkorchid;
+    background-color: darkorchid;
 }
 
 /*Die Beschriftungen der logischen Gruppen besitzen nur links und rechts einen Rand sowie runde Ecken.*/
 
 .beschriftungLogischerGruppen {
-  border: 2px lavender solid;
-  border-radius: 5px;
-  border-bottom: 0px;
-  border-top: 0px;
-  margin: 20px;
+    border: 2px lavender solid;
+    border-radius: 5px;
+    border-bottom: 0px;
+    border-top: 0px;
+    margin: 20px;
 }
 
 /*Die logischen Gruppen besitzen nur oben einen Rand.*/
 
 fieldset {
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-color: lavender;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: lavender;
 }
 
 /*Die Eingabelemente (mit Ausnahme von select und textarea ) besitzen nur unten einen Rand.*/
 
 input {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }

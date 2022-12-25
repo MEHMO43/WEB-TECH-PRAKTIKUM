@@ -1,0 +1,53 @@
+header, nav, main, aside {
+    border: 1px solid white;
+    padding: 1em;
+    text-align: center;
+}
+
+#headerNavMainAsideFooterContainerInPodcast {
+    display: grid;
+    grid-template-areas:
+                             "head head"
+                             "nav nav"
+                             "main eside"
+                             "foota foota";
+    grid-template-columns: auto 20% ;
+}
+
+header {
+    grid-area: head;
+}
+
+aside {
+    grid-area: eside;
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: foota;
+}
+
+main {
+    grid-area: main;
+}
+
+#info{
+    grid-area: info;
+}
+#bild{
+    grid-area: bild;
+}
+#liste{
+    grid-area: liste;
+}
+#mainContainer{
+display: grid;
+    grid-template-areas: "info bild"
+                         "liste liste";
+
+}
+
+

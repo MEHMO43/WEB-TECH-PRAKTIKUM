@@ -1,0 +1,31 @@
+header, nav, main, aside {
+    border: 1px solid white;
+    padding: 1em;
+    text-align: center;
+}
+
+header, nav {
+    display: flex;
+    justify-content: center;
+}
+
+.mainAsideContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    flex: 2 1 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside {
+    flex-basis: 30%;
+}
+
+.footerContainer {
+   display: flex;
+    text-align: center;
+    justify-content: center;
+}
