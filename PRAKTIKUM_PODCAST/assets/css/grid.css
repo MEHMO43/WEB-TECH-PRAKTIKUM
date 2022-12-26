@@ -1,53 +1,83 @@
-header, nav, main, aside {
-    border: 1px solid white;
-    padding: 1em;
-    text-align: center;
-}
 
-#headerNavMainAsideFooterContainerInPodcast {
-    display: grid;
-    grid-template-areas:
-                             "head head"
-                             "nav nav"
-                             "main eside"
-                             "foota foota";
-    grid-template-columns: auto 20% ;
+/* TODOs: -nav in die mitte
+          -logo in die mitte
+          -podcast.html grid info und bild trennen   
+ */
+
+header,
+nav,
+main,
+aside {
+  border: 1px solid white;
+  padding: 1em;
+  text-align: center;
 }
 
 header {
-    grid-area: head;
+  grid-area: head;
 }
 
 aside {
-    grid-area: eside;
+  grid-area: eside;
 }
 
 nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 footer {
-    grid-area: foota;
+  grid-area: foota;
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
-#info{
-    grid-area: info;
-}
-#bild{
-    grid-area: bild;
-}
-#liste{
-    grid-area: liste;
-}
-#mainContainer{
-display: grid;
-    grid-template-areas: "info bild"
-                         "liste liste";
-
+#headerNavMainAsideFooterContainerInPodcast {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "nav nav nav"
+    "main main eside"
+    "main main eside"
+    "foota foota foota";
+  grid-template-columns: 40% 40% 20%;
 }
 
+#liste {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+#info {
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+#bild {
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 1;
+}
 
+/*
+    .div1 { grid-area: 1 / 1 / 2 / 4; }
+    .div2 { grid-area: 2 / 1 / 3 / 4; }
+    .div3 { grid-area: 3 / 1 / 5 / 3; }
+    .div4 { grid-area: 3 / 3 / 5 / 4; }
+    .div5 { grid-area: 5 / 1 / 6 / 4; }
+    */
+#headerNavMainAsideFooterContainerInNewPodcast {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "nav nav nav"
+    "main main eside"
+    "main main eside"
+    "foota foota foota";
+  grid-template-columns: 40% 40% 20%;
+}
+footer{
+    display: grid;
+    justify-self: center;
+}
