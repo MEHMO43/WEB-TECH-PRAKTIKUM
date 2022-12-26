@@ -6,32 +6,49 @@
 
 header,
 nav,
-main,
+main,#bildPodcast,#infoPodcast,#listePodcast,
 aside {
   border: 1px solid white;
   padding: 1em;
   text-align: center;
 }
 
-header {
+#headerPodcast {
   grid-area: head;
 }
-
-aside {
-  grid-area: eside;
-}
-
-nav {
+#navPodcast {
   grid-area: nav;
 }
-
-footer {
-  grid-area: foota;
-}
-
-main {
+#mainPodcast {
   grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 20px;
 }
+#bildPodcast{
+  grid-column:2 /span 1;
+  grid-row: 1;
+
+}
+#infoPodcast{
+ grid-column: 1/ span 1;
+  grid-row: 1;
+
+}
+#listePodcast{
+ grid-column: 1/span 2;
+  grid-row: 2;
+
+}
+#asidePodcast {
+  grid-area: eside;
+}
+#footerPodcast {
+  grid-area: foota;
+  justify-self: center;
+}
+
 
 #headerNavMainAsideFooterContainerInPodcast {
   display: grid;
@@ -42,31 +59,9 @@ main {
     "main main eside"
     "foota foota foota";
   grid-template-columns: 40% 40% 20%;
+  max-width: 100%;
 }
 
-#liste {
-  display: grid;
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-#info {
-  display: grid;
-  grid-column: 1 / span 1;
-  grid-row: 1;
-}
-#bild {
-  display: grid;
-  grid-column: 2 / span 1;
-  grid-row: 1;
-}
-
-/*
-    .div1 { grid-area: 1 / 1 / 2 / 4; }
-    .div2 { grid-area: 2 / 1 / 3 / 4; }
-    .div3 { grid-area: 3 / 1 / 5 / 3; }
-    .div4 { grid-area: 3 / 3 / 5 / 4; }
-    .div5 { grid-area: 5 / 1 / 6 / 4; }
-    */
 #headerNavMainAsideFooterContainerInNewPodcast {
   display: grid;
   grid-template-areas:
@@ -78,6 +73,5 @@ main {
   grid-template-columns: 40% 40% 20%;
 }
 footer{
-    display: grid;
     justify-self: center;
 }
