@@ -24,26 +24,23 @@ aside {
 }
 
 #mainPodcast {
-  grid-area: main;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-template-areas:
+    "info bild"
+    "liste liste";
+  grid-auto-columns: 100%;
 }
 
 #bildPodcast {
-  grid-column: 2 / span 1;
-  grid-row: 1;
+  grid-area: bild;
 }
 
 #infoPodcast {
-  grid-column: 1 / span 1;
-  grid-row: 1;
+  grid-area: info;
 }
 
 #listePodcast {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+  grid-area: liste;
 }
 
 #asidePodcast {
@@ -63,7 +60,7 @@ aside {
     "main main eside"
     "main main eside"
     "foota foota foota";
-  grid-template-columns: 40% 40% 20%;
+  grid-template-columns: 40% 40% auto;
   max-width: 100%;
 }
 
@@ -125,11 +122,23 @@ footer {
 
 @media screen and (max-width: 480px) {
   #headerNavMainAsideFooterContainerInPodcast {
+    display: grid;
     grid-template-areas:
       "head"
       "nav"
       "main"
       "eside"
       "foota";
+    grid-template-columns: initial;
+    max-width: 100%;
+  }
+
+  #mainPodcast {
+    display: grid;
+    grid-template-areas:
+      "info"
+      "liste"
+      "bild";
+    grid-auto-columns: 100%;
   }
 }
