@@ -1,4 +1,3 @@
-
 /* TODOs: -nav in die mitte
           -logo in die mitte
           -podcast.html grid info und bild trennen   
@@ -6,7 +5,10 @@
 
 header,
 nav,
-main,#bildPodcast,#infoPodcast,#listePodcast,
+main,
+#bildPodcast,
+#infoPodcast,
+#listePodcast,
 aside {
   border: 1px solid white;
   padding: 1em;
@@ -16,39 +18,42 @@ aside {
 #headerPodcast {
   grid-area: head;
 }
+
 #navPodcast {
   grid-area: nav;
 }
+
 #mainPodcast {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
 }
-#bildPodcast{
-  grid-column:2 /span 1;
-  grid-row: 1;
 
-}
-#infoPodcast{
- grid-column: 1/ span 1;
+#bildPodcast {
+  grid-column: 2 / span 1;
   grid-row: 1;
-
 }
-#listePodcast{
- grid-column: 1/span 2;
+
+#infoPodcast {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+#listePodcast {
+  grid-column: 1 / span 2;
   grid-row: 2;
-
 }
+
 #asidePodcast {
   grid-area: eside;
 }
+
 #footerPodcast {
   grid-area: foota;
   justify-self: center;
 }
-
 
 #headerNavMainAsideFooterContainerInPodcast {
   display: grid;
@@ -62,16 +67,69 @@ aside {
   max-width: 100%;
 }
 
+header {
+  grid-area: headInNewPodcast;
+}
+
+nav {
+  grid-area: navInNewPodcast;
+}
+
+main {
+  grid-area: mainInNewPodcast;
+}
+
+aside {
+  grid-area: esideInNewPodcast;
+}
+
+footer {
+  grid-area: footaInNewPodcast;
+}
+
 #headerNavMainAsideFooterContainerInNewPodcast {
   display: grid;
   grid-template-areas:
-    "head head head"
-    "nav nav nav"
-    "main main eside"
-    "main main eside"
-    "foota foota foota";
+    "headInNewPodcast headInNewPodcast headInNewPodcast"
+    "navInNewPodcast navInNewPodcast navInNewPodcast"
+    "mainInNewPodcast mainInNewPodcast esideInNewPodcast"
+    "mainInNewPodcast mainInNewPodcast esideInNewPodcast"
+    "footaInNewPodcast footaInNewPodcast footaInNewPodcast";
   grid-template-columns: 40% 40% 20%;
 }
-footer{
-    justify-self: center;
+
+footer {
+  justify-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  #headerNavMainAsideFooterContainerInNewPodcast {
+    grid-template-areas:
+      "headInNewPodcast headInNewPodcast headInNewPodcast"
+      "navInNewPodcast navInNewPodcast navInNewPodcast"
+      "mainInNewPodcast mainInNewPodcast mainInNewPodcast"
+      "mainInNewPodcast mainInNewPodcast mainInNewPodcast"
+      "esideInNewPodcast esideInNewPodcast esideInNewPodcast"
+      "footaInNewPodcast footaInNewPodcast footaInNewPodcast";
+  }
+  #headerNavMainAsideFooterContainerInPodcast {
+    grid-template-areas:
+      "head head head"
+      "nav nav nav"
+      "main main main"
+      "main main main"
+      "eside eside eside"
+      "foota foota foota";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #headerNavMainAsideFooterContainerInPodcast {
+    grid-template-areas:
+      "head"
+      "nav"
+      "main"
+      "eside"
+      "foota";
+  }
 }
