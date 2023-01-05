@@ -9,5 +9,5 @@ console.log([`Die Viewport-Breite beträgt: ${getViewportWidth()} Pixel`]);
 
 const percent = window.screen.width * 0.3;
 if(document.documentElement.clientWidth < percent) {
-    console.log(alert("Warnung! Viewport-Breite weniger als 30%"));
+   alert("Warnung! Viewport-Breite weniger als 30%");
 }
