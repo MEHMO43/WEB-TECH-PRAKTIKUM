@@ -102,12 +102,12 @@ footer {
 @media screen and (max-width: 768px) {
   #headerNavMainAsideFooterContainerInNewPodcast {
     grid-template-areas:
-      "headInNewPodcast headInNewPodcast headInNewPodcast"
-      "navInNewPodcast navInNewPodcast navInNewPodcast"
-      "mainInNewPodcast mainInNewPodcast mainInNewPodcast"
-      "mainInNewPodcast mainInNewPodcast mainInNewPodcast"
-      "esideInNewPodcast esideInNewPodcast esideInNewPodcast"
-      "footaInNewPodcast footaInNewPodcast footaInNewPodcast";
+      "headInNewPodcast headInNewPodcast"
+      "navInNewPodcast navInNewPodcast"
+      "mainInNewPodcast mainInNewPodcast"
+      "mainInNewPodcast mainInNewPodcast"
+      "esideInNewPodcast esideInNewPodcast"
+      "footaInNewPodcast footaInNewPodcast";
   }
   #headerNavMainAsideFooterContainerInPodcast {
     grid-template-areas:
