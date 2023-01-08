@@ -33,21 +33,28 @@
           method="GET"
         >
           <label for="Suchen"></label>
-          <p>
-            <input
-              id="Suchen"
-              name="pctitle"
-              type="text"
-              placeholder="Suche..."
-              maxlength="100"
-              pattern="[A-Z][a-z0-9]*"
-              required
-            /><br />
-            <input type="submit" value="Finden" />
-          </p>
+          <fieldset>
+            <legend>
+              <span>Podcast Suche</span>
+            </legend>
+            <label for="Suchen"></label>
+            <p>
+              <input
+                id="Suchen"
+                name="pctitle"
+                type="text"
+                placeholder="Suche..."
+                maxlength="100"
+                pattern="[A-Z][a-z0-9]*"
+                required
+              /><br />
+            </p>
+            <p><input type="submit" value="Finden" /></p>
+          </fieldset>
         </form>
-
-        <button id="btn">Listenansicht</button>
+        <p>
+          <button id="btn">Listenansicht</button>
+        </p>
 
         <h2>Liste der abonnierten Podcast</h2>
         <!--Hier kommen die Templates durch den Script-->
