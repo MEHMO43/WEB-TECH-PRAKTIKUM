@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/flex.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-    <script src="assets/js/script.js"></script>
   </head>
 
   <body>
@@ -26,7 +25,6 @@
       <a href="podcast.html">Details zum Podcast</a>
       <a href="episode.html">Details zur Episode</a>
       <a href="newPodcast.html">New Podcast</a>
-      <a href="index2.html">Abonnierte Podcast(Kachel)</a>
     </nav>
     <div class="mainAsideContainer">
       <main>
@@ -49,23 +47,69 @@
           </p>
         </form>
 
+        <button id="btn">Listenansicht</button>
+
         <h2>Liste der abonnierten Podcast</h2>
-        <ul>
-          <li>
-            <a href="podcast.html#podcast01">
-              <h3>Legion: Hacking Anonymous</h3>
-              <figure>
-                <img
-                  src="assets/img/Legion_Hacking_A.png"
-                  width="200"
-                  height="200"
-                  alt="Podcast Logo"
-                />
-              </figure>
-            </a>
-            <i>5 Episoden</i>
-          </li>
-        </ul>
+        <!--Hier kommen die Templates durch den Script-->
+        <div id="mockupContainer" data-view="kachelTemplate">
+          <div class="podcastKacheln">
+            <div class="podcastContainerKachel">
+              <a href="podcast.html#podcast01">
+                <figure>
+                  <img
+                    src="assets/img/Legion_Hacking_A.png"
+                    width="200"
+                    height="200"
+                    alt="Podcast Logo"
+                  />
+                </figure>
+                <h3>Legion: Hacking Anonymous</h3>
+              </a>
+            </div>
+
+            <div class="podcastContainerKachel">
+              <a href="podcast.html#podcast01">
+                <figure>
+                  <img
+                    src="assets/img/Legion_Hacking_A.png"
+                    width="200"
+                    height="200"
+                    alt="Podcast Logo"
+                  />
+                </figure>
+                <h3>Legion: Hacking Anonymous</h3>
+              </a>
+            </div>
+
+            <div class="podcastContainerKachel">
+              <a href="podcast.html#podcast01">
+                <figure>
+                  <img
+                    src="assets/img/Legion_Hacking_A.png"
+                    width="200"
+                    height="200"
+                    alt="Podcast Logo"
+                  />
+                </figure>
+                <h3>Legion: Hacking Anonymous</h3>
+              </a>
+            </div>
+
+            <div class="podcastContainerKachel">
+              <a href="podcast.html#podcast01">
+                <figure>
+                  <img
+                    src="assets/img/Legion_Hacking_A.png"
+                    width="200"
+                    height="200"
+                    alt="Podcast Logo"
+                  />
+                </figure>
+                <h3>Legion: Hacking Anonymous</h3>
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
       <aside>
         <h3>Bereich mit Zusatzinformationen</h3>
@@ -84,5 +128,102 @@
         </p>
       </footer>
     </div>
+
+    <template id="liste">
+      <ul>
+        <li>
+          <a href="podcast.html#podcast01">
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+          <i>5 Episoden</i>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="podcast.html#podcast01">
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+          <i>5 Episoden</i>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="podcast.html#podcast01">
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+          <i>5 Episoden</i>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="podcast.html#podcast01">
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+          <i>5 Episoden</i>
+        </li>
+      </ul>
+    </template>
+
+    <template id="kachelTemplate">
+      <div class="podcastKacheln">
+        <div class="podcastContainerKachel">
+          <a href="podcast.html#podcast01">
+            <figure>
+              <img
+                src="assets/img/Legion_Hacking_A.png"
+                width="200"
+                height="200"
+                alt="Podcast Logo"
+              />
+            </figure>
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+        </div>
+
+        <div class="podcastContainerKachel">
+          <a href="podcast.html#podcast01">
+            <figure>
+              <img
+                src="assets/img/Legion_Hacking_A.png"
+                width="200"
+                height="200"
+                alt="Podcast Logo"
+              />
+            </figure>
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+        </div>
+
+        <div class="podcastContainerKachel">
+          <a href="podcast.html#podcast01">
+            <figure>
+              <img
+                src="assets/img/Legion_Hacking_A.png"
+                width="200"
+                height="200"
+                alt="Podcast Logo"
+              />
+            </figure>
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+        </div>
+
+        <div class="podcastContainerKachel">
+          <a href="podcast.html#podcast01">
+            <figure>
+              <img
+                src="assets/img/Legion_Hacking_A.png"
+                width="200"
+                height="200"
+                alt="Podcast Logo"
+              />
+            </figure>
+            <h3>Legion: Hacking Anonymous</h3>
+          </a>
+        </div>
+      </div>
+    </template>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -80,5 +80,4 @@ for (let i = 0; i < podcasts.length; i++) {
   for (let j = 0; j < podcasts[i].episoden.length; j++) {
     console.log(podcasts[i].episoden[j].titel + ` (${podcasts[i].episoden[j].getDauerInStundenUndMinuten()})`)
   }
-};
-console.log(derWumboVomKnobelbecher)
+}
