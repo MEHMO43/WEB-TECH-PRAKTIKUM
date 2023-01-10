@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>newPodcast.html</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
@@ -44,7 +44,7 @@
               </legend>
 
               <p>
-                <label for="titel">Titel</label>
+                <label for="titel" class="required">Titel</label>
                 <input
                   name="pctitle"
                   id="titel"
@@ -97,7 +97,9 @@
               </p>
 
               <p>
-                <label for="nameDesBesitzers">Name des Besitzers</label>
+                <label for="nameDesBesitzers" class="required"
+                  >Name des Besitzers</label
+                >
                 <input
                   name="pcownername"
                   placeholder="Max Musterfrau"
@@ -108,7 +110,9 @@
               </p>
 
               <p>
-                <label for="eMailDesBesitzers">E-Mail des Besitzers</label>
+                <label for="eMailDesBesitzers" class="required"
+                  >E-Mail des Besitzers</label
+                >
                 <input
                   type="email"
                   size="30"
@@ -127,7 +131,9 @@
               </legend>
 
               <p>
-                <label for="letztesUpdateDatum">Letztes Update (Datum)</label>
+                <label for="letztesUpdateDatum" class="required"
+                  >Letztes Update (Datum)</label
+                >
                 <input
                   name="pclastupdatedate"
                   type="date"
@@ -138,7 +144,7 @@
               </p>
 
               <p>
-                <label for="letztesUpdateUhrzeit"
+                <label for="letztesUpdateUhrzeit" class="required"
                   >Letztes Update (Uhrzeit)</label
                 >
                 <input

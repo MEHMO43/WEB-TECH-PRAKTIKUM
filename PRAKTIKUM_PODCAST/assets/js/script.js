@@ -36,10 +36,8 @@ function Episode (titel, beschreibung, dauer, datum = new Date(), EpisodeAudio) 
   this.dauer = dauer
   this.datum = datum
   this.EpisodeAudio = EpisodeAudio
-
   this.getDauerInStundenUndMinuten = function () {
     const stunden = Math.floor(this.dauer / 3600000)
-    // berechnet restliche Millisekunden
     const minuten = Math.floor((this.dauer % 3600000) / 60000)
     return (`${stunden}h ${minuten}min`)
   }
@@ -50,6 +48,8 @@ function EpisodeAudio (url, groesse, typ) {
   this.groesse = groesse
   this.typ = typ
 }
+
+// Object.setPrototypeOf(EpisodeAudio, Episode)
 
 const podcasts = []
 

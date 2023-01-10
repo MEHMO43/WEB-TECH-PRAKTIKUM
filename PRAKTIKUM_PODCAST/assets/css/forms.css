@@ -7,15 +7,18 @@ input:invalid {
   border-color: lightcoral;
 }
 
-/* mit Ausnahme von select und Textarea überprüfen */
-
 input:active {
   background-color: thistle;
 }
 
 /* hinter Eingabeelemente für erforderliche Eingaben ( required ) ein rotes Sternchen*/
 
-input:required::after {
+/* input:required::after {
+  content: "*";
+  color: red;
+} */
+
+.required::after {
   content: "*";
   color: red;
 }
@@ -46,6 +49,10 @@ Deklarationen sind erlaubt):
   border-bottom: 0px;
   border-top: 0px;
   margin: 20px;
+}
+
+nav {
+  justify-content: center;
 }
 
 /*Die logischen Gruppen besitzen nur oben einen Rand.*/

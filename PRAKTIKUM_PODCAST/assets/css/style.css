@@ -27,6 +27,7 @@ nav {
 }
 
 nav [href] {
+  color: white;
   text-decoration: none;
   border: 2px white solid;
   background-color: mediumpurple;
@@ -71,7 +72,7 @@ Sie das Bild vorher mit einem Grafikprogramm auf die gewünschte Größe. Als
 Alternative zu einem Bild können Sie auch das Unicode-Zeichen "✉" verwenden*/
 
 [href*="mailto"]::before {
-  content: '✉';
+  content: "✉";
 }
 
 h1 {
@@ -86,5 +87,3 @@ footer {
   position: fixed;
   bottom: 1px;
 }
-
-

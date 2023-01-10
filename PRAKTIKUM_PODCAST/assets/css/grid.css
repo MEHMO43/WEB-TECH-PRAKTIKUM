@@ -1,6 +1,6 @@
-/* TODOs: -nav in die mitte
+/* TODOs:
           -logo in die mitte
-          -podcast.html grid info und bild trennen   
+       
  */
 
 header,
@@ -13,6 +13,8 @@ aside {
   border: 1px solid white;
   padding: 1em;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #headerPodcast {
